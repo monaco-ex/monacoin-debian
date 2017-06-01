@@ -1,3 +1,9 @@
+monacoin-addrindex (0.13.2.2-xenial2) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cryptcoin Junkey <cryptcoin.junkey@gmail.com>  Fri, 2 Jun 2017 10:32:19 +0900
+
 monacoin (0.13.2.2-xenial1) xenial; urgency=medium
 
   * New upstream release.
