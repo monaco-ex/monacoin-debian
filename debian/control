@@ -1,8 +1,8 @@
-Source: monacoin
+Source: monacoin-addrindex
 Section: utils
 Priority: optional
-Maintainer: Vis Virial <visvirial@gmail.com>
-Uploaders: Vis Virial <visvirial@gmail.com>
+Maintainer: Cryptcoin Junkey <cryptcoin.junkey@gmail.com>
+Uploaders: Cryptcoin Junkey <cryptcoin.junkey@gmail.com>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -25,11 +25,12 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://monacoin.org/
-Vcs-Git: git://github.com/monacoin/monacoin.git
-Vcs-Browser: https://github.com/monacoin/monacoin
+Vcs-Git: git://github.com/monapary/monacoin.git
+Vcs-Browser: https://github.com/monaparty/monacoin
 
-Package: monacoind
+Package: monacoind-addrindex
 Architecture: any
+Conflicts: monacoind
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
  Monacoin is a peer-to-peer Internet currency that enables instant,
@@ -48,8 +49,9 @@ Description: peer-to-peer network based digital currency - daemon
  This package provides the daemon, monacoind, and the CLI tool
  monacoin-cli to interact with the daemon.
 
-Package: monacoin-qt
+Package: monacoin-qt-addrindex
 Architecture: any
+Conflicts: monacoin-qt
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
  Monacoin is a peer-to-peer Internet currency that enables instant,
@@ -67,8 +69,9 @@ Description: peer-to-peer network based digital currency - Qt GUI
  .
  This package provides Monacoin-Qt, a GUI for Monacoin based on Qt.
 
-Package: monacoin-tx
+Package: monacoin-tx-addrindex
 Architecture: any
+Conflicts: monacoin-tx
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
  Monacoin is a peer-to-peer Internet currency that enables instant,
