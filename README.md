@@ -1,4 +1,7 @@
 <!-- vim: set spell: -->
+
+> Note: This repository is patched for addrindex patches.
+
 monacoin-debian
 ===============
 
